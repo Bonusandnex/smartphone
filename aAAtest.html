@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color on Mouse Hover</title>
+    <style>
+        .change-color {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            cursor: pointer;
+            /* เพิ่ม pointer เมื่อเอาเมาส์ไปชี้ */
+            animation: pulse 1s infinite alternate;
+            /* เพิ่มอนิเมชัน */
+        }
+        
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="change-color" id="changeColorDiv" onmouseover="changeColor()" onmouseout="resetColor()" onclick="openYouTube()"></div>
+
+    <script>
+        function changeColor() {
+            var element = document.getElementById("changeColorDiv");
+            element.style.backgroundColor = "red";
+        }
+
+        function resetColor() {
+            var element = document.getElementById("changeColorDiv");
+            element.style.backgroundColor = "blue";
+        }
+
+        function openYouTube() {
+            window.location.href = "https://www.youtube.com/"; // เปิดลิงก์ไปยัง YouTube
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* เพิ่ม flex-wrap เพื่อให้เรียงลงมาเมื่อครบแถว */
+}
+
+.blog-box {
+    width: calc(20% - 20px);
+    /* 25% คือ 100% / 4 (แถวละ 4 blog) */
+    height: 250px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* เพิ่มการเปลี่ยนสีพื้นหลังและเงาเมื่อ hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาให้กับ .blog-box */
+    cursor: pointer;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-box:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    /* ทำให้เงามีความเข้มขึ้นเมื่อ hover */
+}
+
+.blog-box:last-child {
+    margin-right: 0;
+    /* ไม่ต้องมีระยะห่างด้านขวาใน .blog-box ที่เป็นลำดับสุดท้าย */
+}
+
+.blog-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.blog-text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.blog-text a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.blog-heading h3 {
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+    text-align: center;
+}
+
+.blog-text h3 {
+    margin-top: 1rem;
+}

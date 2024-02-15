@@ -1,0 +1,13 @@
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings h3 {
+    font-size: 30px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    /* หรือใช้ padding-top: 10px; ตามที่คุณต้องการ */
+}

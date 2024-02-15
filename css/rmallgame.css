@@ -1,0 +1,52 @@
+.text-blog h3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.img-rm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* เพิ่มบรรทัดนี้เพื่อให้รูปและข้อความอยู่ในคอลัมน์เดียวกัน */
+    justify-content: center;
+    align-items: center;
+}
+
+.img-rm img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    /* เพิ่มบรรทัดนี้เพื่อให้มีระยะห่างระหว่างรูปและข้อความ */
+}
+
+.rm-link a {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    /* เพิ่มบรรทัดนี้เพื่อทำให้ข้อความอยู่กึ่งกลาง */
+}
+
+.rm-set img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.rm-set {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* เพิ่มบรรทัดนี้เพื่อให้รูปและข้อความอยู่ในคอลัมน์เดียวกัน */
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-heading {}

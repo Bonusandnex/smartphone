@@ -1,0 +1,290 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
+ * {
+     font-family: 'Noto Sans Thai', sans-serif;
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     list-style-type: none;
+ }
+ 
+ html,
+ body {
+     font-family: 'Noto Sans Thai', sans-serif;
+ }
+ 
+ .hover-container img {
+     width: 100%;
+     display: block;
+ }
+ 
+ .main-wrapper {
+     min-height: 100vh;
+     background-color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .container {
+     max-width: 1200px;
+     padding: 0 1rem;
+     margin: 0 auto;
+ }
+ 
+ .product-div {
+     margin: 1rem 0;
+     padding: 2rem 0;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     background-color: #fff;
+     border-radius: 3px;
+     column-gap: 10px;
+ }
+ 
+ .product-div-left {
+     padding: 20px;
+ }
+ 
+ .product-div-right {
+     padding: 20px;
+ }
+ 
+ .img-container img {
+     width: 100%;
+     height: 100%;
+     margin: flex;
+ }
+ 
+ .hover-container {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin-top: 32px;
+ }
+ 
+ .hover-container div {
+     border: 2px solid rgb(0, 0, 0);
+     padding: 1rem;
+     border-radius: 3px;
+     margin: 0 4px 8px 4px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .active {
+     border-color: rgb(0, 0, 0)!important;
+ }
+ 
+ .hover-container div:hover {
+     border-color: rgb(0, 0, 0);
+ }
+ 
+ .hover-container div img {
+     width: 50px;
+     cursor: pointer;
+ }
+ 
+ .product-div-right span {
+     display: block;
+ }
+ 
+ .product-name {
+     font-size: 26px;
+     margin-bottom: 22px;
+     font-weight: 700;
+     letter-spacing: 1px;
+     opacity: 0.9;
+ }
+ 
+ .product-price {
+     font-weight: 700;
+     font-size: 24px;
+     opacity: 0.9;
+     font-weight: 500;
+ }
+ 
+ .product-rating {
+     display: flex;
+     align-items: center;
+     margin-top: 12px;
+ }
+ 
+ .product-rating span {
+     margin-right: 6px;
+ }
+ 
+ .product-description {
+     font-weight: 18px;
+     line-height: 1.6;
+     font-weight: 300;
+     opacity: 0.9;
+     margin-top: 22px;
+ }
+ 
+ .btn-groups {
+     margin-top: 22px;
+ }
+ 
+ .btn-groups button {
+     display: inline-block;
+     font-size: 16px;
+     font-family: inherit;
+     text-transform: uppercase;
+     padding: 15px 16px;
+     color: #fff;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ 
+ .btn-groups button .fas {
+     margin-right: 8px;
+ }
+ 
+ .add-cart-btn {
+     background-color: #FF9F00;
+     border: 2px solid #FF9F00;
+     margin-right: 8px;
+ }
+ 
+ .add-cart-btn:hover {
+     background-color: #fff;
+     color: #FF9F00;
+ }
+ 
+ .buy-now-btn {
+     background-color: #000;
+     border: 2px solid #000;
+ }
+ 
+ .buy-now-btn:hover {
+     background-color: #fff;
+     color: #000;
+ }
+ 
+ .product-div-right img {
+     width: 600px;
+     height: 400px;
+ }
+ 
+ .nav_blue ul li {
+     font-family: 'Noto Sans Thai', sans-serif;
+ }
+ 
+ @media screen and (max-width: 992px) {
+     .product-div {
+         grid-template-columns: 100%;
+     }
+     .product-div-right {
+         text-align: center;
+     }
+     .product-rating {
+         justify-content: center;
+     }
+     .product-description {
+         max-width: 400px;
+         margin-right: auto;
+         margin-left: auto;
+     }
+ }
+ 
+ @media screen and (max-width: 400px) {
+     .btn-groups button {
+         width: 100%;
+         margin-bottom: 10px;
+     }
+ }
+ 
+ .h2 .header_topic {
+     font-size: 21px;
+     padding: 15px 15px 15px 15px;
+     margin-bottom: 15px;
+     margin-top: 30px;
+     font-weight: 500;
+ }
+ 
+ .ul .nav_blue {
+     margin: 0;
+     padding-left: 40px;
+ }
+ 
+ .h2 .header_topic {
+     background: black var(--spec-headertopic-bg);
+     color: white var(--spec-headertopic-color);
+ }
+ 
+ .ul .nav_blue li {
+     padding: 0 0 0 15px;
+     font-size: 18px;
+     line-height: 32px;
+     font-weight: 300;
+ }
+ 
+ .spec_container {
+     font-size: 18px;
+     line-height: 29px;
+ }
+ 
+ .detail_content {
+     font-size: 21px;
+     padding: 15px 2rem 15px 15px;
+     margin-bottom: 15px;
+     margin-top: 30px;
+     font-weight: 500;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+ }
+ 
+ .blog-yt {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 10rem;
+     /* ปรับตามความต้องการ */
+ }
+ 
+ .blog-yt iframe {
+     border-radius: 20px;
+ }
+ 
+ .blog-font h3 {
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 15rem;
+ }
+ 
+ .blog-yt iframe h3 {
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2rem;
+ }
+ 
+ .blog-infor {
+     display: flex;
+     margin-left: 200px;
+ }
+ 
+ .blog-infor>div {
+     flex: 1;
+ }
+ 
+ .font-infor {
+     border: 2px solid #ececec;
+     text-align: center;
+ }
+ 
+ .font-infor a {
+     font-size: 30px;
+     color: black;
+     /* เปลี่ยนเป็นสีดำ */
+     text-decoration: none;
+     /* เอาขีดใต้ออก */
+ }
