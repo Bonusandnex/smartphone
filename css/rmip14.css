@@ -34,13 +34,22 @@
  }
  
  .product-div {
-     margin: 1rem 0;
-     padding: 2rem 0;
+     margin: 0.5rem 0;
+     /* ลดระยะห่างด้านบนและด้านล่าง */
+     padding: 1rem 0;
+     /* ลดระยะขอบด้านบนและด้านล่าง */
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     background-color: #fff;
+     background-color: #ededed;
      border-radius: 3px;
      column-gap: 10px;
+ }
+ 
+ .product-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /* ทำให้ .product-div-left อยู่ตรงกลาง */
  }
  
  .product-div-left {
@@ -49,6 +58,8 @@
  
  .product-div-right {
      padding: 20px;
+     margin-top: 20px;
+     /* ทำให้ .product-div-right มีระยะห่างด้านบนจาก .product-div-left */
  }
  
  .img-container img {
