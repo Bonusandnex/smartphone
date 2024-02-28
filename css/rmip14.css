@@ -57,9 +57,31 @@
  }
  
  .product-div-right {
-     padding: 20px;
-     margin-top: 20px;
-     /* ทำให้ .product-div-right มีระยะห่างด้านบนจาก .product-div-left */
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     /* เพิ่มเพื่อให้รายละเอียดอยู่ใต้รูปภาพ */
+     align-items: center;
+     /* เพิ่มเพื่อจัดให้รายละเอียดอยู่ตรงกลางแนวนอน */
+ }
+ 
+ .product-div-right img {
+     width: 600px;
+     /* กำหนดความกว้างของรูปภาพ */
+     height: 400px;
+     /* กำหนดความสูงของรูปภาพ */
+     display: block;
+     /* แสดงเป็น block เพื่อให้ margin:auto; ใช้ได้ */
+     margin: auto;
+     /* ตำแหน่ง margin:auto; จะทำให้รูปภาพตรงกลางแนวนอนและแนวตั้ง */
+ }
+ 
+ .detail_content {
+     font-size: 21px;
+     padding: 15px 2rem 15px 15px;
+     margin-top: 30px;
+     font-weight: 500;
+     text-align: center;
  }
  
  .img-container img {
@@ -176,11 +198,6 @@
      color: #000;
  }
  
- .product-div-right img {
-     width: 600px;
-     height: 400px;
- }
- 
  .nav_blue ul li {
      font-family: 'Noto Sans Thai', sans-serif;
  }
@@ -237,17 +254,6 @@
  .spec_container {
      font-size: 18px;
      line-height: 29px;
- }
- 
- .detail_content {
-     font-size: 21px;
-     padding: 15px 2rem 15px 15px;
-     margin-bottom: 15px;
-     margin-top: 30px;
-     font-weight: 500;
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
  }
  
  .blog-yt {
